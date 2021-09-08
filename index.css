@@ -1,0 +1,76 @@
+
+.animDiv:active{
+    background:linear-gradient(to bottom right, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5)), linear-gradient(to top left, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5));
+    color:rgb(229, 226, 226);
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+html{
+    height: 100%;
+}
+body{
+    background:radial-gradient(circle at 50% 60%, rgb(41, 40, 40), black)
+}
+p, h1, div{
+    font-family: SuisseIntl-Book,Arial,sans-serif;
+    position: relative;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 0px black;
+}
+h1{
+    font-size:4em;
+}
+p{
+    font-size: 2.5em;
+}
+
+.divClick{
+    position: relative;
+    height: 400px;
+    width: 900px;
+    background:linear-gradient(to bottom right, rgba(255, 0, 0, 0.507), rgba(255, 255, 0, 0.5)), linear-gradient(to top left, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5));
+    margin: 0 auto;
+    font-size: 2.5em;
+    user-select: none;
+    line-height: 400px;
+    box-shadow: 20px 20px black;
+    border-radius: 5px;
+    touch-action: manipulation;
+    min-height: 200px;
+    min-width: 450px;
+}
+.divTry{
+    position: relative;
+    height: 60px;
+    width:200px;
+    background-color: rgb(209, 35, 35);
+    margin: 0 auto;
+    border-bottom: solid rgb(182, 35, 35) 5px;
+    border-right: solid rgb(182, 29, 29) 5px;
+    user-select: none;
+    line-height:60px;
+    font-size:1.5em;
+    top:50px;
+}
+.second{
+    position: relative;
+    height: 60px;
+    width:200px;
+    background-color: rgb(209, 35, 35);
+    border-bottom: solid rgb(182, 35, 35) 5px;
+    border-right: solid rgb(182, 29, 29) 5px;
+    line-height:60px;
+    font-size:1.5em;
+    left:82%;
+    bottom:400px;
+    margin: 20px 0;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
