@@ -1,4 +1,4 @@
-let counter = 11;
+let counter = 10;
 let intervalId = null;
 let c = 0;
 let clicks = 0;
