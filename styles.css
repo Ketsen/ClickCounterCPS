@@ -74,3 +74,17 @@ a{
     text-decoration: none;
     color:white;
 }
+*{
+    right:100vw;
+    animation-name: lancement;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+@keyframes lancement{
+    from{
+        right:100vw;
+    }
+    to{
+        right:0vw;
+    }
+}
