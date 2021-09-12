@@ -3,16 +3,15 @@
     background:linear-gradient(to bottom right, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5)), linear-gradient(to top left, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5));
     color:rgb(229, 226, 226);
 }
+
 html, body{
     padding: 0;
     margin: 0;
-    overflow: hidden;
-}
-html{
-    height: 100%;
 }
 body{
-    background:radial-gradient(circle at 50% 60%, rgb(41, 40, 40), black)
+    background:radial-gradient(circle at 50% 60%, rgb(41, 40, 40), black);
+    background-attachment: fixed;
+    overflow:hidden;
 }
 p, h1, div{
     font-family: SuisseIntl-Book,Arial,sans-serif;
@@ -31,29 +30,28 @@ p{
 .divClick{
     position: relative;
     height: 400px;
-    width: 900px;
+    width: 800px;
     background:linear-gradient(to bottom right, rgba(255, 0, 0, 0.507), rgba(255, 255, 0, 0.5)), linear-gradient(to top left, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5));
     margin: 0 auto;
-    font-size: 2.5em;
+    font-size: 2.6em;
     user-select: none;
     line-height: 400px;
     box-shadow: 20px 20px black;
     border-radius: 5px;
     touch-action: manipulation;
-    min-height: 200px;
-    min-width: 450px;
+
 }
 .divTry{
     position: relative;
     height: 60px;
     width:200px;
     background-color: rgb(209, 35, 35);
-    margin: 0 auto;
+    margin: 0px auto;
     border-bottom: solid rgb(182, 35, 35) 5px;
     border-right: solid rgb(182, 29, 29) 5px;
     user-select: none;
     line-height:60px;
-    font-size:1.5em;
+    font-size:1.6em;
     top:50px;
 }
 .second{
@@ -64,8 +62,8 @@ p{
     border-bottom: solid rgb(182, 35, 35) 5px;
     border-right: solid rgb(182, 29, 29) 5px;
     line-height:60px;
-    font-size:1.5em;
-    left:82%;
+    font-size:1.6em;
+    left:78%;
     bottom:400px;
     margin: 20px 0;
     user-select: none;
@@ -86,5 +84,35 @@ a{
     }
     to{
         right:0vw;
+    }
+}
+@media all and (max-width:1500px){
+    div[class="second"]{
+        left:83.5%;
+    }
+}
+@media all and (max-width:1250px){
+    body{
+        overflow-y: visible;
+    }
+    div[class="second"]{
+        bottom:0px;
+        left:0px;
+        top:50px;
+        margin:20px auto;
+    }
+}
+@media all and (max-width:900px){
+    .divClick{
+        width:600px;
+        height:300px;
+        line-height:300px;
+    }
+}
+@media all and (max-width:600px){
+    .divClick{
+        width:450px;
+        height:225px;
+        line-height:225px;
     }
 }
