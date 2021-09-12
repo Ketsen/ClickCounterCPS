@@ -1,4 +1,3 @@
-
 .animDiv:active{
     background:linear-gradient(to bottom right, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5)), linear-gradient(to top left, rgba(207, 2, 2, 0.507), rgba(173, 173, 2, 0.5));
     color:rgb(229, 226, 226);
@@ -11,7 +10,6 @@ html, body{
 body{
     background:radial-gradient(circle at 50% 60%, rgb(41, 40, 40), black);
     background-attachment: fixed;
-    overflow:hidden;
 }
 p, h1, div{
     font-family: SuisseIntl-Book,Arial,sans-serif;
@@ -41,19 +39,6 @@ p{
     touch-action: manipulation;
 
 }
-.divTry{
-    position: relative;
-    height: 60px;
-    width:200px;
-    background-color: rgb(209, 35, 35);
-    margin: 0px auto;
-    border-bottom: solid rgb(182, 35, 35) 5px;
-    border-right: solid rgb(182, 29, 29) 5px;
-    user-select: none;
-    line-height:60px;
-    font-size:1.6em;
-    top:50px;
-}
 .second{
     position: relative;
     height: 60px;
@@ -63,10 +48,10 @@ p{
     border-right: solid rgb(182, 29, 29) 5px;
     line-height:60px;
     font-size:1.6em;
-    left:78%;
-    bottom:400px;
     margin: 20px 0;
     user-select: none;
+    top:10px;
+    display:inline-block;
 }
 a{
     text-decoration: none;
@@ -84,22 +69,6 @@ a{
     }
     to{
         right:0vw;
-    }
-}
-@media all and (max-width:1500px){
-    div[class="second"]{
-        left:83.5%;
-    }
-}
-@media all and (max-width:1250px){
-    body{
-        overflow-y: visible;
-    }
-    div[class="second"]{
-        bottom:0px;
-        left:0px;
-        top:50px;
-        margin:20px auto;
     }
 }
 @media all and (max-width:900px){
@@ -120,10 +89,5 @@ a{
     .animDiv:active{
         background:linear-gradient(to bottom right, rgba(255, 0, 0, 0.507), rgba(255, 255, 0, 0.5)), linear-gradient(to top left, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5));
         color:white;
-    }
-}
-@media all and (max-height:930px){
-    body{
-        overflow-y:visible;
     }
 }
