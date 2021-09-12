@@ -122,3 +122,8 @@ a{
         color:white;
     }
 }
+@media all and (max-height:930px){
+    body{
+        overflow-y:visible;
+    }
+}
